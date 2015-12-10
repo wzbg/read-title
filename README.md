@@ -12,7 +12,7 @@ $ npm install --save read-title
 ## Usage
 
 ```js
-const fetchUrl = require('read-title');
+const readTitle = require('read-title');
 
 readTitle('https://www.npmjs.com/package/read-title').then(
   title => console.log(title),
