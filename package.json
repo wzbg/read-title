@@ -1,6 +1,6 @@
 {
   "name": "read-title",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "read any web page's title",
   "main": "index.js",
   "scripts": {
