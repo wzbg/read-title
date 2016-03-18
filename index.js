@@ -2,7 +2,7 @@
 * @Author: zyc
 * @Date:   2015-12-10 18:36:06
 * @Last Modified by:   zyc
-* @Last Modified time: 2016-02-29 14:43:42
+* @Last Modified time: 2016-03-18 15:27:24
 */
 'use strict';
 
@@ -15,7 +15,7 @@ module.exports = url => {
       result => {
         const { res, buf } = result;
         const $ = cheerio.load(buf);
-        const title = $('title').text().trim();
+        const title = $('head title').text().trim();
         const commonSeparatingCharacters = [' | ', ' _ ', ' - ', '«', '»', '—'];
         for (let char of commonSeparatingCharacters) {
           const tmpArray = title.split(char);
